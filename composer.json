@@ -1,0 +1,25 @@
+{
+    "name": "orklah/psalm-elvis-begone",
+    "description": "Replace Elvis operator (?:) by null coalesce operator (??) when applicable",
+    "type": "psalm-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "orklah"
+        }
+    ],
+    "extra": {
+        "psalm" : {
+            "pluginClass": "Orklah\\ElvisBegone\\Plugin"
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "vimeo/psalm": "^4.10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Orklah\\ElvisBegone\\": ["./src"]
+        }
+    }
+}
